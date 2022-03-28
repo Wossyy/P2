@@ -160,7 +160,7 @@ while True:
         base_euro = data_dict['base']
         # calculates
         calc_one(base_euro, rate_dict, today)
-    elif '/' in user_date or '-' in user_date:
+    elif '-' in user_date:
         # Gets data
         data = requests.get(
             'http://data.fixer.io/api/' + user_date + '?access_key=1a08040b9823c19305d7650e109fc96b&symbols=USD,AUD,'
